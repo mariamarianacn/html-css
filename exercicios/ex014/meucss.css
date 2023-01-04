@@ -1,0 +1,20 @@
+@charset "UTF-8"; 
+
+body{
+    background-color:rgb(189, 176, 232) ;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+
+}        
+h1{
+    background-color: rgb(156, 234, 251);
+    font-family: 'Courier New', Courier, monospace;
+    color: blue;
+    font-size: 20px;
+}
+
+h2{
+    color: brown;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}

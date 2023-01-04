@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site das gurias</title>
+    <style>
+        body{
+            background-color: rgba(94, 106, 238, 0.752);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+        header{
+            background-color: rgb(255, 255, 255);
+            width: 70ex;
+            color:rgb(24, 97, 72) ;
+            padding: 7px;
+            margin: auto;
+        }
+
+        h1#titulo{
+            text-align: center;
+            margin: 5px;
+        }
+        
+        nav{
+            text-align: center;
+            background-color: rgba(178, 242, 221, 0.745);
+            box-shadow: 1px 1px 1px rgb(11, 36, 12);
+        }
+
+        a{
+            margin: 5px;
+            color: rgb(150, 150, 250);
+            text-decoration: none;
+        }
+        /*viu, nao precicou indicar que a é filho do nav*/
+
+        a:hover{
+            text-decoration: underline;
+        }
+
+        section{
+            background-color: rgb(255, 255, 255);
+            margin: 19px;
+            padding: 02px 10px;
+            border-radius: 5px 5px 5px 5px; /*se todas forem iguais, dai coloca só um INFOpx*/
+            
+        }
+
+        article{
+            color: rgb(24, 97, 72);
+            background-color: rgba(178, 242, 221, 0.745);
+        }
+        
+        article > aside{
+            background-color: rgb(238, 88, 88);
+        }
+        /*pode escrever tanto indicando ser filho quando so aside*/
+
+        footer{
+            background-color: white;
+            margin: 19px;
+            padding: 01px 10px;
+            box-shadow: 1px 1px ;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+  <header> <!--cabeçalho, nome do site-->
+    <h1 id="titulo">Site das gurias!</h1>
+    <nav> <!--navegação, onde colocar links | PS: NAV FICA SEPARADO!!!-->
+        <a href="#">Maquiagem</a>
+        <a href="#">Moda</a>
+        <a href="#">Feminismo</a>
+        <a href="#">Entreterimento</a>
+        <a href="#">SOS gravidez</a>
+    </nav>
+  </header>
+  <main> <!--sessão principal, onde tá as matérias-->
+    <section> <!--sub-sessões do main-->
+        <article> <!--o que vai estar escrito-->
+            <h2>Notícias sobre a vida na adolescência!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias tempore quasi aut sequi nulla laborum dicta quae culpa quo similique vitae eum deleniti, obcaecati vel optio, quod corrupti numquam unde.</p>
+            <aside> <!--conteúdo relativo ao article-->
+                <p>Artigo escrito por Mariana.</p>
+            </aside>
+        </article>
+    </section>
+  </main>
+  <footer>
+    <p>Escrito e dirigido por Maria Mariana.</p>
+  </footer>
+</body>
+</html>

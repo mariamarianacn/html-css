@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width:725px)" srcset="imagens2/imagempequena.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens2/imagemmedia.png" type="image/png">
+        <img src="imagens2/imagemgrande.png" alt="Imagem">
+    </picture>
+    <h1>Primeiro tipo</h1>
+    <audio src="midia/musica de audio.mp3" controls></audio> <!--CONTROLS = APARECE O AUDIO PARA TOCAR-->
+    <h1>Segundo tipo</h1>
+    <audio controls preload="auto"> <!--em none não aparece informação NENHUMA, metadata aparece TEMPO, auto NÃO funciona no Chrome pois ele desabilitou essa função (nunca use)// podemos adicionar, também, loop! mas ele fará loop, né-->
+        <source src="midia/musica de audio.mp3" type="audio/mpeg">
+        <source src="midia/musica de audio.mp3" type="audio/ogg"> <!--ARQUIVO WAV? muito pesado, não é recomendado-->
+        <p>Ops! Parece que seu navegador não trabalha com aúdio. Baixe o arquivo <a href="midia/musica de audio.mp3" download="midia/musica de audio.mp3" type="application/mpeg">aqui</a>.</p>
+    </audio> <!--OK, qual você prefere? analisando as opções, o segundo tipo. Pois se mp3 não der, ainda temos outra opção e ele possui as mesmas atribuições que o primeiro-->
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        div:hover{
+            color: aqua;
+        }
+
+        div > p{
+            display: none;
+        } /* p = filho da div!! paragrafos dentro da div*/
+
+        div:hover > p{
+            display: block; /*para mostrar o que está escondido*/
+            color: aliceblue;
+            background-color: brown;
+
+        } 
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse pelo texto abaixo:</p>
+    <div>
+        Passe o mouse aqui
+        <p>Texto escondido</p>
+    </div>
+</body>
+</html>

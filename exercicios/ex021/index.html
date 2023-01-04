@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box</title>
+    <style>
+        h1{
+            background-color: aquamarine;
+            
+            display: block;
+            /*podemos mudar a caracteristica normal e colocar inline em h1*/
+
+            width: 300px;
+            height: 300px;
+            /*BOX SIZE*/
+
+            border-width: 4px;
+            border-color: darkblue;
+            border-style: solid;
+            /*SHORHAND: width, color, style*/
+            
+            padding-top: 20px;
+            padding-right: 2px ;
+            padding-bottom: 2px;
+            padding-left: 50px;
+            /*SHORTHAND: top, right, bottom, left /// um único valor igual para todos é só colocar uma unid\de que valerá para todos*/
+
+            margin-top: 10px ;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            /*para deixar uma CAIXA!!, não um txt, usar margin: 'auto';*/
+            /*SHORTHAND: top, right, bottom, left /// pode colocar na boa o auto*/
+
+            outline-width: 5px;
+            outline-style: groove;
+            outline-color: rgb(57, 255, 77);
+            /*SHORTHAND: width, style, color*/
+        }
+
+        a{
+            background-color: aquamarine;
+            width: 300px;
+            height: 300px;
+            border-width: 4px;
+            border-color: darkblue;
+            border-style: double;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa</h1>
+    <p>Parágrafos são exemplos de box-level, enquanto os <a href="#">links</a>, são exemplos de inline-level. </p>
+</body>
+</html>

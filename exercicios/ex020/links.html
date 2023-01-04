@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+    /*ESTADO = P-CLASSE // CONTEUDO = P-ELEMETO*/
+
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        a{
+            color: blueviolet;
+            text-decoration: none;
+            font-weight: 100;
+        }
+
+        a:visited{
+            color: violet; /*se já visitou, fica rosinha*/
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{ /*quando você segurar o link, ele terá esta cor*/
+            color: yellowgreen;
+        }
+
+        .especial::before{
+            content: '<-';
+            text-decoration: none;
+            font-weight: 200;
+            color: darkgray;
+        }
+
+        .especial::after{ /*um conteúdo adicional */
+            content: '->';
+            text-decoration: none;
+            font-weight: 200;
+            color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li>Repositório do<a class="especial" href="https://github.com/gustavoguanabara/html-css"> GitHub</a>.</li>
+        <li>Repositório da tua <a href="https://open.spotify.com/">vó</a>.</li>
+        <li>Repositório da tua <a href="https://open.spotify.com/artist/4UVlSeEFDPmlkYKaRMRoOz">mãe</a>.</li>
+    </ul>
+    <p>Sou uma mulher muito querida e amigável!!</p>
+</body>
+</html>

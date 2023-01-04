@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio test!</title>
+</head>
+<body>
+    <h1>Primeiro tipo</h1>
+    <audio src="midia/musica de audio.mp3" controls></audio> <!--CONTROLS = APARECE O AUDIO PARA TOCAR-->
+    <h1>Segundo tipo</h1>
+    <audio controls preload="auto"> <!--em none não aparece informação NENHUMA, metadata aparece TEMPO, auto NÃO funciona no Chrome pois ele desabilitou essa função (nunca)-->
+        <source src="midia/musica de audio.mp3" type="audio/mpeg">
+        <source src="midia/musica de audio.mp3" type="audio/ogg">
+        <p>Ops! Parece que seu navegador não trabalha com aúdio. Baixe o arquivo <a href="midia/musica de audio.mp3" download="midia/musica de audio.mp3" type="application/mpeg">aqui</a>.</p>
+    </audio>
+</body>
+</html>
