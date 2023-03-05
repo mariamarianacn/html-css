@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style> /*pré flexbox*/
+        #container{
+            background-image: url(conteudo/target001.png);
+
+            position: relative; /*nao podemos ter o left e top*/
+
+            background-size: 100% 100%;
+            height: 90vh;
+            padding: 10px;
+            background-color: purple;
+        }
+
+        #conteudo {
+            background-image: url(conteudo/target001.png);
+            background-size: 100% 100%;
+
+            position: absolute; /*com o absoluto, podemos ter o left e top*/
+
+            left: 50%; /*vai de fato para a esquerda, pode ser em % | além disso, ele não para no MEIO da tela, e sim mais para o lado*/
+            top: 50%; /*vai para cima, pode ser em %*/ 
+            height: 200px;
+            width: 400px;
+
+            background-color: yellow; /*margin só serve para horizontal*/
+
+            transform: translate(-200px, -100px); /*vai mexer no componente top e height | primeiro é right e o outro top | PODE SER EM %*/
+
+        }
+    </style>
+</head>
+<body>
+    <section id="container"> <!--pai-->
+        <article id="conteudo"> <!--filho, conteudo contido dentro da caixa-->
+
+        </article>
+    </section>
+</body>
+</html>
