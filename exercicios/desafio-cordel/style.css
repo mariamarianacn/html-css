@@ -10,45 +10,67 @@
 }
 
 *{
-margin: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh; /*tamanho mínimo, ou 100% da minha view height*/
+
 }
 
 header{
-background-color: black;
+    background-color: black;
 }
 
 header > h1{
-color: white;  
-text-align: center;  
-font-family:var(--fonte1) ;
+    padding-top: 40px;
+    padding-bottom: 10px;
+
+    color: white;  
+    text-align: center;  
+    font-family:var(--fonte1) ;
+    text-transform: uppercase; /*COLOCAR TUDO PARA MAIÚSCULO!;*/
+    /*PODERIA! ter usado font-variant: small-caps;*/
 }
 
-h2{
-text-align: center;
-color: white; 
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;   
+header > h2{
+    padding-bottom: 20px;
+
+    font-size: 1em;
+    text-align: center;
+    color: white; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;   
+    
 }
 
-footer{
-background-color: black;
-height: 50px;
-margin: auto;
-
+footer{ 
+    background-color: black;
+    height: 50px;
+    margin: auto;
+    margin-top: 30px;
 }
 
 footer > p{
-color: white;
-text-decoration: none;
-text-align: center;
-padding: 14px;
-font-family: var(--fonte2);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 section#letras{
-color: rgb(0, 0, 0);
-font-family: var(--fonte2);
+    color: rgb(0, 0, 0);
+    font-family: var(--fonte2);
 }
 
-a:visited{
-color: white;
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+a:hover{
+    text-decoration: underline;
+     /*aqui o text-decoration NÃO funciona, pois realmente não há nada de decoração, apenas no A*/
 }
