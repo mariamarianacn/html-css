@@ -7,8 +7,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 :root{
-    --fonte1: 'Passion One', 'sans-serif';
-    --fonte2: 'Sriracha', 'sans-serif', 'cursive';
+    --fonte01: "Passion One";
+    --fonte02: "Sriracha";
 }
 
 *{
@@ -17,87 +17,64 @@
 }
 
 html, body{
-    min-height: 100vh; /*tamanho mínimo, ou 100% da minha view height*/
-
+    min-height: 100vh; /*tamanho mínimo da viewport height*/
+    background-color: white;
 }
 
 header{
     background-color: black;
+    color: white;
+    text-align: center;
 }
 
 header > h1{
     padding-top: 40px;
-    padding-bottom: 10px;
 
-    color: white;  
-    text-align: center;  
-    font-family:var(--fonte1) ;
-    text-transform: uppercase; /*COLOCAR TUDO PARA MAIÚSCULO!;*/
-    /*PODERIA! ter usado font-variant: small-caps;*/
-    font-size: 10vh;
-
+    font-size: 8vw; /*VIEWPORT WIDTH, configurar letras | PODERIA TER USADO EM | NÃO É O ADEQUADO, MAS É UM RECURSO */
+    font-family: var(--fonte01);
+    font-variant: small-caps; /*poderia ter usado text-transform com uppercase, mas ficaria gritando*/
 }
 
-header > h2{
-    padding-bottom: 20px;
+header > p{
+    padding-bottom: 40px;
+    font-size: 1.2em;
 
-    font-weight: 100;
-    font-size: 1em;
-    text-align: center;
-    color: white; 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;   
-    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 section#letras{
-    color: rgb(0, 0, 0);
-    font-family: var(--fonte2);
-    line-height: 2em;
+    padding-top: 10vh; /*veja o efeito em diferentes telas*/
+    padding-bottom: 10vh;
+
+
+    font-family: var(--fonte02);
+    line-height: 2.4em;
     padding-left: 30px;
-    font-size: medium;
-
-    padding-top: 10vh; /*10% da View height, a partir daqui paramos de usar o px*/
-    padding-bottom: 10vh; /*necessário!! mas é preciso ver nos testes*/
-}
-
-p{ /*RESOLVER ISSO AMANHA*/
-    font-size: 2em;
+    font-size: 3vw;
 }
 
 section.imagem{
     background-color: gray;
+}
+
+section.imagem p{
+    background-color: rgba(154, 48, 48, 0.23);
     
+    display: inline-block;
+    padding: 0px 10px;
+
 }
 
-p#fundo{
-    background-color: rgba(0, 0, 0, 0.145);
-    width: 200px;
-    height: 217px;
-    padding: 20px;
-}
 
-footer{ 
-    background-color: black;
-    height: 50px;
-    margin: auto;
-    margin-top: 30px;
-}
-
-footer > p{
-    color: white;
+a {
     text-decoration: none;
-    text-align: center;
-    padding: 14px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-a{
     color: white;
-    text-decoration: none;
 }
 
-
-a:hover{ /*pode também: header a:hover, footer a:hover*/
+header a:hover, footer a:hover{
     text-decoration: underline;
-     /*aqui o text-decoration NÃO funciona, pois realmente não há nada de decoração, apenas no A*/
+}
+
+header a:visited, footer a:visited{
+    color: white;
 }
